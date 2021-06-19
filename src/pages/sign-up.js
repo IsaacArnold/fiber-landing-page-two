@@ -24,12 +24,14 @@ const SignUp = () => {
 
   return (
     <div className="sign-up-layout">
-      <Helmet htmlAttributes={{ lang: "en" }}>
+      <Helmet
+        htmlAttributes={{
+          lang: "en",
+          description: "Sign-up to use the world's best portfolio builder.",
+        }}
+      >
         <meta charSet="utf-8" />
         <title>Sign-up to Fiber | Fiber</title>
-        <description>
-          Sign-up to use the world's best portfolio builder.
-        </description>
         <link
           rel="canonical"
           href="https://pensive-dijkstra-b20c0b.netlify.app/sign-up"
