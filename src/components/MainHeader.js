@@ -10,7 +10,7 @@ const MainHeader = () => {
       <div className="content-container">
         <div className="header-grid">
           <StaticImage
-            src="../images/hero-illustration.png"
+            src="../../images/hero-illustration.png"
             alt="Person using multimedia while wearing VR Glasses"
             className="header-img"
             placeholder="blurred"
