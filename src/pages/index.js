@@ -12,7 +12,10 @@ export default function Home() {
       <Helmet htmlAttributes={{ lang: "en" }}>
         <meta charSet="utf-8" />
         <title>Build Your Dream Portfolio | Fiber</title>
-        <link rel="canonical" href="http://mysite.com/example" />
+        <link
+          rel="canonical"
+          href="https://pensive-dijkstra-b20c0b.netlify.app/"
+        />
       </Helmet>
       <MainHeader />
       <WhyFiber />

@@ -27,7 +27,10 @@ const SignUp = () => {
       <Helmet htmlAttributes={{ lang: "en" }}>
         <meta charSet="utf-8" />
         <title>Sign-up to Fiber | Fiber</title>
-        <link rel="canonical" href="http://mysite.com/example" />
+        <link
+          rel="canonical"
+          href="https://pensive-dijkstra-b20c0b.netlify.app/sign-up"
+        />
       </Helmet>
       <div className="grid-left">
         <h1>
