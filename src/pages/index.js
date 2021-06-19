@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <Layout>
       <Helmet htmlAttributes={{ lang: "en" }}>
-        <meta
-          charSet="utf-8"
-          description="Create your portfolio in minutes with Fiber's premade templates."
-        />
+        <meta charSet="utf-8" />
         <title>Build Your Dream Portfolio | Fiber</title>
+        <description>
+          Create your portfolio in minutes with Fiber's premade templates.
+        </description>
         <link
           rel="canonical"
           href="https://pensive-dijkstra-b20c0b.netlify.app/"
