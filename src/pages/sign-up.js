@@ -25,7 +25,10 @@ const SignUp = () => {
   return (
     <div className="sign-up-layout">
       <Helmet htmlAttributes={{ lang: "en" }}>
-        <meta charSet="utf-8" />
+        <meta
+          charSet="utf-8"
+          description="Sign-up to use the world's best portfolio builder."
+        />
         <title>Sign-up to Fiber | Fiber</title>
         <link
           rel="canonical"

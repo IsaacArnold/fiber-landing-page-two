@@ -10,7 +10,10 @@ export default function Home() {
   return (
     <Layout>
       <Helmet htmlAttributes={{ lang: "en" }}>
-        <meta charSet="utf-8" />
+        <meta
+          charSet="utf-8"
+          description="Create your portfolio in minutes with Fiber's premade templates."
+        />
         <title>Build Your Dream Portfolio | Fiber</title>
         <link
           rel="canonical"

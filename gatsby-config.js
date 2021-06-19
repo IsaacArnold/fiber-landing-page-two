@@ -23,5 +23,6 @@ module.exports = {
       "Create your portfolio in minutes with Fiber's premade templates.",
     copyright: "This website is copyright 2021 Isaac Arnold",
     contact: "isaacarnold@icloud.com",
+    url: "https://pensive-dijkstra-b20c0b.netlify.app",
   },
 };
