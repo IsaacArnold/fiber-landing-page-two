@@ -1,0 +1,555 @@
+// Imports
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// Variables
+$primary-color: #4d17d2;
+$pale-background: #fbf8f4;
+$white-txt: #fff;
+$white-background: #fff;
+
+// Typography
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  letter-spacing: 0.4px;
+  scroll-behavior: smooth;
+}
+
+p {
+  line-height: 1.4;
+}
+
+// Layout
+.layout {
+  // max-width: 1800px;
+  margin: 0 auto;
+}
+
+.content-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+// Navbar
+.navbar {
+  background-color: $pale-background;
+  padding-top: 30px;
+  cursor: pointer;
+  .nav-brand {
+    text-decoration: none;
+    color: #000;
+  }
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul,
+    .nav-btns {
+      display: none;
+    }
+  }
+}
+
+// Main Header
+.main-header {
+  background-color: $pale-background;
+  .rating {
+    display: none;
+  }
+  h1 {
+    width: 70%;
+    margin-top: 30px;
+  }
+  p {
+    font-weight: 300;
+  }
+  .header-btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-btn {
+    background-color: $primary-color;
+    color: $white-txt;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+  }
+  .secondary-btn {
+    color: $primary-color;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: underline 2px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .checkmark-section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    margin-top: 15px;
+    .checkmark {
+      margin-right: 10px;
+    }
+    .checkmark-div {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 10px;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Why Fiber
+.why-fiber {
+  margin-top: 60px;
+  header {
+    margin-bottom: 60px;
+  }
+  h4 {
+    margin-bottom: 15px;
+    color: $primary-color;
+    font-size: 1.1rem;
+  }
+  h2 {
+    font-size: 1.9rem;
+    width: 91%;
+  }
+  .features-section {
+    margin-bottom: 40px;
+    .features-heading {
+      margin-top: 10px;
+      font-weight: 600;
+    }
+    .features-content {
+      font-weight: 300;
+    }
+  }
+}
+
+// Diversify
+.diversify {
+  .content-container {
+    background-color: $primary-color;
+    color: $white-txt;
+    border-radius: 8px;
+    padding: 40px 30px 0 30px;
+    h2 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-weight: 300;
+      width: 90%;
+    }
+  }
+  .diversify-btn {
+    background-color: $white-background;
+    color: $primary-color;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .page-image {
+    margin-top: 30px;
+    border-radius: 8px 8px 0 0;
+  }
+  .page-image-two {
+    background-image: url("../images/page-image.png");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    border-radius: 8px 8px 0 0;
+    margin-top: 30px;
+  }
+}
+
+// Porfotlios
+.portfolios {
+  margin-top: 60px;
+  .port-card {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "img info"
+      "userContent userContent"
+      "btn btn";
+    border: 1.8px solid lightgray;
+    border-radius: 8px;
+    padding: 10px 20px 20px;
+    margin-bottom: 30px;
+    .user-img {
+      grid-area: img;
+      width: 50px;
+      height: 50px;
+      align-self: center;
+    }
+    .user-info {
+      grid-area: info;
+      .name {
+        color: $primary-color;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+      .revenue {
+        font-weight: 300;
+        margin-top: 0;
+      }
+    }
+    .user-content {
+      grid-area: userContent;
+      font-weight: 300;
+    }
+    .user-btn {
+      grid-area: btn;
+      padding: 20px;
+      border: 1.8px solid lightgray;
+      border-radius: 8px;
+      color: $primary-color;
+      text-decoration: none;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+}
+
+// Footer
+.footer {
+  background-color: $pale-background;
+  p,
+  li {
+    font-weight: 300;
+  }
+  li {
+    list-style-type: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  ul {
+    padding: 0;
+  }
+  .fiber-section {
+    padding-top: 60px;
+    p {
+      margin-top: 10px;
+      &:first-of-type {
+        margin-bottom: 0;
+        width: 90%;
+      }
+    }
+  }
+  .sitemap-section,
+  .resources-section,
+  .company-section,
+  .portfolio-section {
+    margin-top: 30px;
+  }
+  .portfolio-section {
+    padding-bottom: 60px;
+  }
+}
+
+// Media Queries
+
+// Tablet - 768px
+@media (min-width: 768px) {
+  .header-img {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+  .main-header {
+    .content-container {
+      p,
+      .header-btns,
+      .checkmark-section {
+        width: 70%;
+      }
+    }
+  }
+  .why-fiber {
+    .features {
+      width: 70%;
+    }
+  }
+  .diversify {
+    .content-container {
+      h2,
+      p,
+      .page-image-two,
+      .diversify-btn {
+        width: 70%;
+        margin: auto;
+      }
+      p {
+        margin: 16px auto;
+      }
+      .page-image-two {
+        margin-top: 30px;
+      }
+    }
+  }
+  .footer {
+    .content-container {
+      .fiber-section {
+        p {
+          &:first-of-type {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Desktop - 1024px
+@media (min-width: 1024px) {
+  .navbar {
+    .content-container {
+      .hamburger {
+        display: none;
+      }
+      ul,
+      .nav-btns {
+        display: inline;
+      }
+      ul {
+        padding-left: 0;
+        display: flex;
+        margin-left: auto;
+        margin-right: 100px;
+      }
+      li {
+        font-weight: 300;
+        list-style-type: none;
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      .nav-btns {
+        .sign-in-btn,
+        .sign-up-btn {
+          text-decoration: none;
+        }
+        .sign-in-btn {
+          font-weight: 600;
+          padding: 15px 20px;
+        }
+        .sign-up-btn {
+          background-color: $primary-color;
+          color: $white-txt;
+          padding: 15px 20px;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+  .header-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "headerGridContent headerGridImg";
+    padding-top: 30px;
+    padding-bottom: 60px;
+    .header-img {
+      grid-area: headerGridImg;
+      width: 100%;
+      height: 100%;
+    }
+    .header-grid-content {
+      grid-area: headerGridContent;
+      align-self: center;
+      .rating {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .star {
+          margin-right: 5px;
+          &:last-of-type {
+            margin-right: 15px;
+          }
+        }
+        p {
+          font-size: 0.9rem;
+          font-weight: 300;
+          margin: 0;
+        }
+      }
+      h1 {
+        width: 80%;
+        margin-top: 15px;
+      }
+      p {
+        width: 100%;
+      }
+      .header-btns {
+        flex-direction: row;
+        width: 100%;
+      }
+      .checkmark-section {
+        flex-direction: row;
+        width: 100%;
+        .checkmark-div {
+          &:first-child {
+            margin-right: 10px;
+          }
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  .why-fiber {
+    .content-container {
+      h2 {
+        width: 75%;
+      }
+    }
+    .features {
+      width: 100%;
+      display: flex;
+      .features-section {
+        width: 55%;
+        margin-right: 50px;
+      }
+    }
+  }
+
+  .diversify {
+    .content-container {
+      padding-top: 0;
+      .diversify-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "diversifyGridContent diversifyGridImg";
+        .diversify-grid-content {
+          grid-area: diversifyGridContent;
+          align-self: center;
+          h2 {
+            width: 100%;
+          }
+          p {
+            width: 100%;
+          }
+          .diversify-btn {
+            margin: 0;
+            width: 40%;
+          }
+        }
+        .page-image-two {
+          grid-area: diversifyGridImg;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .portfolios {
+    .content-container {
+      display: flex;
+      .port-card {
+        margin-right: 40px;
+        &:last-child {
+          margin-right: 0;
+        }
+        .user-btn {
+          margin-top: auto;
+        }
+      }
+    }
+  }
+
+  .footer {
+    .content-container {
+      display: flex;
+      align-items: flex-start;
+      .sitemap-section,
+      .resources-section,
+      .company-section,
+      .portfolio-section {
+        margin-right: 50px;
+        margin-top: 0;
+        padding-top: 60px;
+      }
+      .portfolio-section {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+// Max-width Media Queries
+@media (min-width: 1025px) {
+  .content-container {
+    max-width: 1598px;
+  }
+
+  .header-grid-content {
+    p {
+      max-width: 504px;
+    }
+  }
+  .header-grid {
+    .header-img {
+      max-width: 527px;
+    }
+  }
+  .why-fiber {
+    .content-container {
+      h2 {
+        max-width: 652px;
+      }
+      .features {
+        .features-section {
+          p {
+            &:last-child {
+              max-width: 325px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .diversify {
+    .content-container {
+      .diversify-grid {
+        max-width: 1156px;
+        margin: auto;
+        .diversify-grid-content {
+          p {
+            max-width: 500px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .content-container {
+      .fiber-section {
+        p {
+          &:first-of-type {
+            max-width: 495px;
+          }
+        }
+      }
+      .sitemap-section {
+        margin-left: auto;
+      }
+    }
+  }
+}

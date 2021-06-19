@@ -1,0 +1,211 @@
+// Imports
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// Variables
+$primary-color: #4d17d2;
+$pale-background: #fbf8f4;
+$white-txt: #fff;
+$white-background: #fff;
+
+// Typography
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  letter-spacing: 0.4px;
+}
+
+p {
+  line-height: 1.4;
+}
+
+// Sign-up Layout
+.sign-up-layout {
+  //   .grid-left {
+  //     display: initial;
+  //   }
+  .grid-right {
+    display: none;
+  }
+  width: 85%;
+  margin: 0 auto;
+  padding: 30px 0;
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+    .link {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  h2 {
+    font-size: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    label {
+      display: flex;
+      flex-direction: column;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-top: 30px;
+      &:last-of-type {
+        flex-direction: row;
+        font-weight: 300;
+        font-size: 1rem;
+        input {
+          height: initial;
+          margin-top: -6px;
+          width: 2.3rem;
+          height: 2.3rem;
+        }
+      }
+      input {
+        height: 3rem;
+        padding-left: 10px;
+        outline-color: $primary-color;
+        border-radius: 8px;
+        border: 1px solid lightgray;
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 1rem;
+        &::placeholder {
+          font-weight: 300;
+          font-size: 1rem;
+        }
+      }
+    }
+    .password {
+      position: relative;
+      .password-svg {
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 45px;
+        cursor: pointer;
+      }
+      .password-input {
+        padding-right: 40px;
+      }
+    }
+    .terms {
+      margin: 0;
+      margin-left: 10px;
+      strong {
+        color: $primary-color;
+        font-weight: 600;
+        text-decoration: underline 2px;
+      }
+    }
+    button {
+      background-color: $primary-color;
+      color: $white-txt;
+      padding: 20px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      text-align: center;
+      margin: 30px 0 10px 0;
+      cursor: pointer;
+    }
+  }
+
+  .sign-up-footer {
+    text-align: center;
+    .emph-footer {
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+}
+
+// Media Queries
+// Tablet - 768px
+@media (min-width: 768px) {
+  .sign-up-layout {
+    width: 60%;
+    form {
+      label {
+        &:last-of-type {
+          input {
+            margin-top: 2px;
+            width: 20px;
+            height: 20px;
+            border: 1px solid lightgray;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Desktop - 1024px
+@media (min-width: 1024px) {
+  .sign-up-layout {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "gridLeft gridRight";
+    grid-gap: 100px;
+    .grid-left {
+      grid-area: gridLeft;
+      padding-top: 30px;
+      margin-left: 70px;
+      max-width: 500px;
+    }
+    .grid-right {
+      display: inline;
+      grid-area: gridRight;
+      background-color: $primary-color;
+      color: $white-txt;
+      text-align: center;
+      padding-top: 30px;
+      overflow: hidden;
+      .grid-right-img {
+        width: 75%;
+        margin-top: 60px;
+        max-width: 580px;
+      }
+      h3 {
+        font-size: 1.5rem;
+        margin-top: 30px;
+      }
+      p {
+        font-weight: 300;
+        font-size: 0.9rem;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+        max-width: 400px;
+      }
+      .circles {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        .circle-one,
+        .circle-two,
+        .circle-three,
+        .circle-four {
+          width: 10px;
+          height: 10px;
+          background-color: $white-txt;
+          opacity: 0.5;
+          margin-left: 5px;
+          border-radius: 50%;
+        }
+        .circle-one {
+          margin-left: 0;
+          color: $white-txt;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
