@@ -24,8 +24,8 @@ const SignUp = () => {
 
   return (
     <div className="sign-up-layout">
-      <Helmet>
-        <meta charSet="utf-8" lang="en" />
+      <Helmet htmlAttributes={{ lang: "en" }}>
+        <meta charSet="utf-8" />
         <title>Sign-up to Fiber | Fiber</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>

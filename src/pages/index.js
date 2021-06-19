@@ -9,8 +9,8 @@ import Portfolios from "../components/Portfolios";
 export default function Home() {
   return (
     <Layout>
-      <Helmet>
-        <meta charSet="utf-8" lang="en" />
+      <Helmet htmlAttributes={{ lang: "en" }}>
+        <meta charSet="utf-8" />
         <title>Build Your Dream Portfolio | Fiber</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
