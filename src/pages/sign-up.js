@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import HidePassword from "../images/svg/hide-password.svg";
@@ -23,6 +24,11 @@ const SignUp = () => {
 
   return (
     <div className="sign-up-layout">
+      <Helmet>
+        <meta charSet="utf-8" lang="en" />
+        <title>Sign-up to Fiber | Fiber</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <div className="grid-left">
         <h1>
           <Link to="/" className="link">
