@@ -28,15 +28,13 @@ const SignUp = () => {
         htmlAttributes={{
           lang: "en",
         }}
-        meta={[
-          {
-            name: "description",
-            content: "Sign-up to use the world's best portfolio builder.",
-          },
-        ]}
       >
         <meta charSet="utf-8" />
         <title>Sign-up to Fiber | Fiber</title>
+        <meta
+          name="description"
+          content="Sign-up to use the world's best portfolio builder."
+        />
         <link
           rel="canonical"
           href="https://pensive-dijkstra-b20c0b.netlify.app/sign-up"

@@ -13,16 +13,13 @@ export default function Home() {
         htmlAttributes={{
           lang: "en",
         }}
-        meta={[
-          {
-            name: "description",
-            content:
-              "Create your portfolio in minutes with Fiber's premade templates.",
-          },
-        ]}
       >
         <meta charSet="utf-8" />
         <title>Build Your Dream Portfolio | Fiber</title>
+        <meta
+          name="description"
+          content="Create your portfolio in minutes with Fiber's premade templates."
+        />
         <link
           rel="canonical"
           href="https://pensive-dijkstra-b20c0b.netlify.app/"
