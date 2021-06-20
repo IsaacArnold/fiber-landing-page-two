@@ -27,8 +27,13 @@ const SignUp = () => {
       <Helmet
         htmlAttributes={{
           lang: "en",
-          description: "Sign-up to use the world's best portfolio builder.",
         }}
+        meta={[
+          {
+            name: "description",
+            content: "Sign-up to use the world's best portfolio builder.",
+          },
+        ]}
       >
         <meta charSet="utf-8" />
         <title>Sign-up to Fiber | Fiber</title>

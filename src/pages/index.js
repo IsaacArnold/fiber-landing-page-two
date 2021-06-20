@@ -12,9 +12,14 @@ export default function Home() {
       <Helmet
         htmlAttributes={{
           lang: "en",
-          description:
-            "Create your portfolio in minutes with Fiber's premade templates.",
         }}
+        meta={[
+          {
+            name: "description",
+            content:
+              "Create your portfolio in minutes with Fiber's premade templates.",
+          },
+        ]}
       >
         <meta charSet="utf-8" />
         <title>Build Your Dream Portfolio | Fiber</title>
