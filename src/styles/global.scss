@@ -227,6 +227,10 @@ p {
 .footer {
   background-color: $pale-background;
   margin-top: auto;
+  .contact-link {
+    text-decoration: none;
+    color: initial;
+  }
   p,
   li {
     font-weight: 300;
