@@ -1,0 +1,74 @@
+// Imports
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// Variables
+$primary-color: #4d17d2;
+$pale-background: #fbf8f4;
+$white-txt: #fff;
+$white-background: #fff;
+
+// Typography
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  letter-spacing: 0.4px;
+}
+
+p {
+  line-height: 1.4;
+}
+
+// Page styling
+.content-container {
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1598px;
+  h1 {
+    margin-top: 30px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    .form-section {
+      display: flex;
+      flex-direction: column;
+      label {
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin-top: 30px;
+      }
+      input,
+      textarea {
+        height: 3rem;
+        padding-left: 10px;
+        outline-color: $primary-color;
+        border-radius: 8px;
+        border: 1px solid lightgray;
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 1rem;
+        max-width: 400px;
+        &::placeholder {
+          font-weight: 300;
+          font-size: 1rem;
+        }
+      }
+      textarea {
+        height: 6rem;
+      }
+    }
+    button {
+      background-color: $primary-color;
+      color: $white-txt;
+      padding: 20px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      text-align: center;
+      margin: 30px 0;
+      cursor: pointer;
+    }
+  }
+}
