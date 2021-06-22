@@ -8,7 +8,22 @@ import "../styles/contact.scss";
 const ContactFormPage = () => {
   return (
     <Layout>
-      <Helmet></Helmet>
+      <Helmet
+        htmlAttributes={{
+          lang: "en",
+        }}
+      >
+        <meta charSet="utf-8" />
+        <title>Contact Us | Fiber</title>
+        <meta
+          name="description"
+          content="Get in touch with the team at Fiber to solve all your questions."
+        />
+        <link
+          rel="canonical"
+          href="https://pensive-dijkstra-b20c0b.netlify.app/contact"
+        />
+      </Helmet>
       <div className="content-container">
         <h1>Contact Us</h1>
 
