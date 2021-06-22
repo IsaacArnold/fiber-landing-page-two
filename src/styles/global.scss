@@ -48,6 +48,9 @@ p {
     ul,
     .nav-btns {
       display: none;
+      .sign-in-btn {
+        color: initial;
+      }
     }
   }
 }
