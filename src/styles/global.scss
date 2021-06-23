@@ -52,6 +52,12 @@ p {
         color: initial;
       }
     }
+    ul > li {
+      transition: 0.3s;
+      &:hover {
+        color: $primary-color;
+      }
+    }
   }
 }
 
@@ -242,6 +248,10 @@ p {
     list-style-type: none;
     margin-bottom: 15px;
     cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      color: $primary-color;
+    }
   }
   ul {
     padding: 0;
