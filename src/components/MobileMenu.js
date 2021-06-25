@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "gatsby";
 import Hamburger from "../images/svg/hamburger-menu.svg";
 import Close from "../images/svg/x.svg";
 
@@ -12,13 +13,37 @@ const MobileMenu = () => {
     menu = (
       <div className="mobile-menu">
         <div className="mobile-menu-head">
-          <h2 onClick={() => SetShowMenu(false)}>Fiber</h2>
+          <h2>Fiber</h2>
           <Close onClick={() => SetShowMenu(false)} />
         </div>
         <ul className="mobile-ul">
-          <li onClick={() => SetShowMenu(false)}>Community</li>
-          <li onClick={() => SetShowMenu(false)}>Pricing</li>
-          <li onClick={() => SetShowMenu(false)}>Features</li>
+          <li>
+            <Link
+              to="/#"
+              className="mobile-li"
+              onClick={() => SetShowMenu(false)}
+            >
+              Community
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/#"
+              className="mobile-li"
+              onClick={() => SetShowMenu(false)}
+            >
+              Pricing
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/#"
+              className="mobile-li"
+              onClick={() => SetShowMenu(false)}
+            >
+              Features
+            </Link>
+          </li>
         </ul>
       </div>
     );

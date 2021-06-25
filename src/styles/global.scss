@@ -76,7 +76,7 @@ p {
     left: 0;
     background-color: $pale-background;
     z-index: 2;
-    height: 85%;
+    height: 60%;
     width: 100%;
     text-align: center;
     .mobile-menu-head {
@@ -98,6 +98,14 @@ p {
         margin-top: 15px;
         &:first-child {
           margin-top: 0;
+        }
+      }
+      .mobile-li {
+        text-decoration: none;
+        color: initial;
+        transition: 0.3s;
+        &:hover {
+          color: $primary-color;
         }
       }
     }
