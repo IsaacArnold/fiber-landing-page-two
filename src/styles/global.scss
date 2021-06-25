@@ -307,6 +307,10 @@ p {
   .contact-link {
     text-decoration: none;
     color: initial;
+    transition: 0.3s;
+    &:hover {
+      color: $primary-color;
+    }
   }
   p,
   li {
