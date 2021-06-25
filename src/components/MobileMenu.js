@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Hamburger from "../images/svg/hamburger-menu.svg";
+import Close from "../images/svg/x.svg";
 
 const MobileMenu = () => {
   const [showMenu, SetShowMenu] = useState(false);
@@ -10,7 +11,10 @@ const MobileMenu = () => {
   if (showMenu) {
     menu = (
       <div className="mobile-menu">
-        <h2 onClick={() => SetShowMenu(false)}>Fiber</h2>
+        <div className="mobile-menu-head">
+          <h2 onClick={() => SetShowMenu(false)}>Fiber</h2>
+          <Close onClick={() => SetShowMenu(false)} />
+        </div>
         <ul className="mobile-ul">
           <li onClick={() => SetShowMenu(false)}>Community</li>
           <li onClick={() => SetShowMenu(false)}>Pricing</li>
