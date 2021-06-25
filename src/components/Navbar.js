@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Hamburger from "../images/svg/hamburger-menu.svg";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   return (
@@ -9,7 +9,7 @@ const Navbar = () => {
         <Link to="/#" className="nav-brand">
           <h2>Fiber</h2>
         </Link>
-        <ul>
+        <ul className="laptop-menu">
           <li>Community</li>
           <li>Pricing</li>
           <li>Featuers</li>
@@ -22,7 +22,7 @@ const Navbar = () => {
             Sign Up
           </Link>
         </div>
-        <Hamburger className="hamburger" />
+        <MobileMenu />
       </div>
     </nav>
   );
