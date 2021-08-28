@@ -36,6 +36,11 @@ const ContactFormPage = () => {
           action="/success"
         >
           <input type="hidden" name="form-name" value="Contact Form" />
+          <input
+            type="hidden"
+            name="subject"
+            value="Ruthy's has a new contact message."
+          />
           <div className="form-section">
             <label htmlFor="fullName">Full Name</label>
             <input
