@@ -27,7 +27,12 @@ const ContactFormPage = () => {
       <div className="content-container">
         <h1>Contact Us</h1>
 
-        <form name="Contact Form" method="POST" data-netlify="true">
+        <form
+          name="Contact Form"
+          method="POST"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+        >
           <input type="hidden" name="form-name" value="Contact Form" />
           <div className="form-section">
             <label htmlFor="fullName">Full Name</label>
