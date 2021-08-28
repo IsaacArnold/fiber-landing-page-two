@@ -2,6 +2,8 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 
+import "../styles/contact.scss";
+
 const SuccessPage = () => {
   return (
     <Layout>
@@ -27,6 +29,9 @@ const SuccessPage = () => {
           Your form has been submitted and one of the team will be in touch
           soon.
         </p>
+        <button type="button" to="/">
+          Return to home page
+        </button>
       </div>
     </Layout>
   );
