@@ -39,7 +39,7 @@ const ContactFormPage = () => {
           <input
             type="hidden"
             name="subject"
-            value="Ruthy's has a new contact message."
+            value="Fiber has a new contact message."
           />
           <div className="form-section">
             <label htmlFor="fullName">Full Name</label>
