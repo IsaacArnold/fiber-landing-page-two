@@ -33,7 +33,7 @@ const ContactFormPage = () => {
           onSubmit="submit"
           netlify-honeypot="bot-field"
           data-netlify="true"
-          action="/success/"
+          action="/success"
         >
           <input type="hidden" name="form-name" value="Contact Form" />
           <div className="form-section">
