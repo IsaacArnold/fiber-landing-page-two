@@ -122,4 +122,4 @@ If you'd like to download or clone this project to develop locally on your own m
 
 ## Acknowledgments
 
-I'd particularly like to acknowledge Codewell for the high quality design mockups and collateral provided to complete this challenge. Go check them out [here](https://www.codewell.cc/)
+I'd particularly like to acknowledge Codewell for the high quality design mockups and collateral provided to complete this challenge. Go check them out [here](https://www.codewell.cc/).
