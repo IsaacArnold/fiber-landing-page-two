@@ -112,7 +112,7 @@ If you'd like to download or clone this project to develop locally on your own m
 2. Ensure Gatsby is installed on your machine. You can find out more [here](https://www.gatsbyjs.com/docs/quick-start/)
 3. In your terminal, navigate to the project directory
 4. Once in the project directory, simply run `gatsby develop`
-5. Open up ![](http://localhost:8000)
+5. Open up [http://localhost:8000](http://localhost:8000)
 
 ## Author
 
