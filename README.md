@@ -12,8 +12,8 @@ This is a solution to the [Fiber Landing Page challenge on Codewell](https://www
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-- [Author](#author)
 - [Local Development](#local-development)
+- [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
