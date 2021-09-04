@@ -1,105 +1,115 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's hello-world starter
-</h1>
+# Fiber Landing Page
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+This is a solution to the [Fiber Landing Page challenge on Codewell](https://www.codewell.cc/challenges/608a7e639691700015db16d1). Codewell challenges help improve your HTML and CSS skills by practicing on real design templates.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+## Table of contents
 
-## 🚀 Quick start
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-1.  **Create a Gatsby site.**
+## Overview
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+### The challenge
 
-    ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
+Take the design and build a landing page for an online portfolio generator. Great to practice flex/grid layouts, absolute positioning and sliders.
 
-1.  **Start developing.**
+### Screenshot
 
-    Navigate into your new site’s directory and start it up.
+![](./Screenshot_README.png)
 
-    ```shell
-    cd my-hello-world-starter/
-    gatsby develop
-    ```
+### Links
 
-1.  **Open the source code and start editing!**
+- Github Repo: [Add solution URL here](https://github.com/IsaacArnold/fiber-landing-page-two)
+- Live Site: [Add live site URL here](https://fiberlandingpage123.netlify.app/)
 
-    Your site is now running at `http://localhost:8000`!
+## My process
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+### Built with
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+- GatsbyJS
+- SCSS
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- Netlify to host contact form
 
-## 🚀 Quick start (Gatsby Cloud)
+### What I learned
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+This challenge was a great way to cement my Gatsby knowledge. Using pages to create the 'Sign Up' and 'Contact' pages, I was able to enable the user to easily navigate between pages.
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-hello-world)
+The biggest challenge in this project was getting the purple section to closely match the mockup files. In the end I settled on an empty div and used a background-image to insert the image.
 
-## 🧐 What's inside?
+One particular aspect of this project I am proud of was my ability to quickly set up a Netlify contact form. This was my first time trying to implement a form and thanks to Netlify's easy integration with Gatsby, this couldn't have been easier. The form also features a honeypot field to prevent spam. Please see the form code below:
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+```jsx
+<form
+  name="Contact Form"
+  method="POST"
+  onSubmit="submit"
+  netlify-honeypot="bot-field"
+  data-netlify="true"
+  action="/success"
+>
+  <input type="hidden" name="form-name" value="Contact Form" />
+  <input
+    type="hidden"
+    name="subject"
+    value="Fiber has a new contact message."
+  />
+  <div className="form-section">
+    <label htmlFor="fullName">Full Name</label>
+    <input
+      type="text"
+      name="fullName"
+      id="fullName"
+      placeholder="John Doe"
+      required="{true}"
+    />
+  </div>
+  <div className="form-section">
+    <label htmlFor="email">Your Email:</label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      placeholder="john@example.com"
+      required="{true}"
+    />
+  </div>
+  <div className="form-section">
+    <label htmlFor="message">Message:</label>
+    <textarea
+      name="message"
+      id="message"
+      placeholder="Type your message here..."
+      required="{true}"
+    />
+  </div>
+  <button type="submit">Send</button>
+</form>
+```
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+### Continued development
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+I'd like to continue developing my Gatsby skills. Particularly in the areas of:
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+- Layout
+- SEO implementation
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+## Author
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+- Website - [Isaac Arnold](https://isaacarnold.dev/)
+- Instagram - [@isaac.codes](https://www.instagram.com/isaac.codes/)
+- Twitter - [@isaac_codes](https://twitter.com/isaac_codes)
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+## Acknowledgments
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[Build, Deploy, and Host On The Only Cloud Built For Gatsby](https://www.gatsbyjs.com/cloud/)
-
-Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+I'd particularly like to acknowledge Codewell for the high quality design mockups and collateral provided to complete this challenge. Go check them out [here](https://www.codewell.cc/)
