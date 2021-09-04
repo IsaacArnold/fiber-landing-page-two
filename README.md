@@ -104,6 +104,16 @@ I'd like to continue developing my Gatsby skills. Particularly in the areas of:
 - Layout
 - SEO implementation
 
+## Local Development
+
+If you'd like to download or clone this project to develop locally on your own machine, just follow these steps:
+
+1. Download or clone this repo
+2. Ensure Gatsby is installed on your machine. You can find out more [here](https://www.gatsbyjs.com/docs/quick-start/)
+3. In your terminal, navigate to the project directory
+4. Once in the project directory, simply run `gatsby develop`
+5. Open up [](http://localhost:8000)
+
 ## Author
 
 - Website - [Isaac Arnold](https://isaacarnold.dev/)
